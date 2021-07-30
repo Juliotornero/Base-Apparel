@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="flex-container">
+
+      <div class="container">
+        <div class="logo">
+          <a href="#">
+            <img src="./images/logo.svg" alt="Logo">
+          </a>
+        </div>
+        <div class="banner">
+          <img src="./images/hero-mobile.jpg" alt="Model">
+        </div>
+        <div class="description">
+          <h1>WE'RE<br><h1>
+          <h2>COMING<br>SOON</h2>
+          <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and out launch deals.</p>
+        </div>
+        <form class="form-input">
+
+          <input class="email" type="text" name="email" id="email" placeholder="Email Address">
+
+          <span id="icon"></span>
+
+          <input class="submit" type="button" value="" id="enviar" onclick="validarEmail(document.getElementById('email').value)">
+          <br>
+          
+          <div id="error" class="mensajes"></div>
+          <div id="correct" class="mensajes"></div>
+        </form>
+        
+      </div>
+
+      <div class="modeldesktop"></div>
+
+    </div>
+
+    <script src="./js/code.js"></script>
+
+  </body>
+</html>
+
+
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Julio Tornero</a>.
+      </p>
+    </footer> -->
